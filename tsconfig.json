@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    /* 1. Fixes SyntaxError: Tells TS to use modern ESM */
+    "module": "commonjs",
+    "moduleResolution": "NodeNext",
+    "target": "ESNext",
+
+    /* 2. Fixes TS5011: Explicitly define the project root */
+    "rootDir": "./", 
+    "outDir": "./dist",
+
+    /* 3. Compatibility & Standard Settings */
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "sourceMap": true,
+    
+    /* 4. Keeps your existing style preferences */
+    "noUncheckedIndexedAccess": true,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true, 
+    "noUncheckedSideEffectImports": true,
+    "ignoreDeprecations": "6.0"
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}
